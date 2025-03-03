@@ -778,7 +778,7 @@ def format_tasks(tasks):
 def main():
     load_data()
     auto_save()
-    token = "8154369570:AAEP7DHKtPDWkYaKMsHPZCBugLAw4NLHlsM"  # استبدل هذا بالتوكن الفعلي
+    token = "bot_token"  # استبدل هذا بالتوكن الفعلي
     app = Application.builder().token(token).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
     app.run_polling()
